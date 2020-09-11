@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TeraModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CaseReport">
+    <Key>
+      <PropertyRef Name="CaseReportID" />
+    </Key>
+    <Property Name="CaseReportID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserInformationID" Type="int" />
+    <Property Name="DateReported" Type="datetime" />
+    <Property Name="CaseReportPhoto" Type="varbinary(max)" />
+    <Property Name="CaseLocation" Type="varchar" MaxLength="250" />
+    <Property Name="EnvironmentalConcernID" Type="int" />
+    <Property Name="XCoordinates" Type="varchar" MaxLength="50" />
+    <Property Name="YCoordinates" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedStatusID" Type="int" />
+    <Property Name="UpdatedStatusDate" Type="datetime" />
+    <Property Name="Notes" Type="varchar" MaxLength="250" />
+    <Property Name="VolunteerID" Type="int" />
+  </EntityType>
+  <EntityContainer Name="TeraModelStoreContainer">
+    <EntitySet Name="CaseReport" EntityType="Self.CaseReport" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

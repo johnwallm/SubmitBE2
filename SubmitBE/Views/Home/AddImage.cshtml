@@ -1,0 +1,51 @@
+﻿@model SubmitBE.Models.CaseReport
+
+@{
+    ViewBag.Title = "AddImage";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+
+@using (Html.BeginForm("AddImage", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="container">
+        <div class="col-md-6">
+            <div class="md-form mb-3">
+                
+                <div class="form-group">
+                    <label>Submit Report</label>
+                    <img id='img-upload' />
+                    <div class="input-group">
+                        
+                        <span class="input-group-btn">
+                            <span class="btn btn-default btn-file">
+                                Upload Image<input type="file" accept="image/jpg, image/jpeg" id="imgInp" name="cameraInput" capture>
+                            </span>
+                        </span>
+                        <input type="text" class="form-control" readonly>
+                    </div>
+                    <label id="TextList">Environmental Concern</label>
+                    <select id="myList">
+                        <option value="1">Land Concerns</option>
+                        <option value="2">Water Concerns</option>
+                    </select>
+                </div>
+            </div>
+            <div class="md-form mb-3">
+                <div class="form-group">
+                    <label for="FormControlTextarea1">Additional Concerns</label>
+                    <textarea class="form-control rounded-0" id="add-cnrns" rows="5"></textarea>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <small>Powered by TerraTechPH</small>
+                <input type="submit" value="Submit" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+

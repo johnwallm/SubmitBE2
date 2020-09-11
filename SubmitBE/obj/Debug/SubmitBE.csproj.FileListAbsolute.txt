@@ -57,4 +57,3 @@ C:\Users\John Bendita\source\repos\SubmitBE\SubmitBE\bin\EntityFramework.dll
 C:\Users\John Bendita\source\repos\SubmitBE\SubmitBE\bin\EntityFramework.SqlServer.dll
 C:\Users\John Bendita\source\repos\SubmitBE\SubmitBE\bin\EntityFramework.xml
 C:\Users\John Bendita\source\repos\SubmitBE\SubmitBE\bin\EntityFramework.SqlServer.xml
-C:\Users\John Bendita\source\repos\SubmitBE\SubmitBE\obj\Debug\SubmitBE.csprojAssemblyReference.cache
